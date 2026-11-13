@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body { @apply bg-white text-navy antialiased; }
+:focus-visible { outline: 3px solid #2373D2; outline-offset: 3px; border-radius: 6px; }
+
+/* خلفية الهيرو: شبكة نقاط خفيفة تتلاشى للأطراف */
+.hero-grid {
+  background-image: radial-gradient(rgba(35,115,210,.18) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+/* ظهور تدريجي بسيط عند التحميل */
+.rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+.rise-2 { animation-delay: .12s; }
+.rise-3 { animation-delay: .24s; }
+.rise-4 { animation-delay: .36s; }
+@keyframes rise { to { opacity: 1; transform: none; } }
+
+.bar { transform-origin: bottom; transform: scaleY(0); animation: grow .9s cubic-bezier(.2,.7,.2,1) forwards; }
+@keyframes grow { to { transform: scaleY(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rise, .bar { animation: none; opacity: 1; transform: none; }
+}
