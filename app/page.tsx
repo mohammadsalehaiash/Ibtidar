@@ -158,9 +158,8 @@ export default function Page() {
       {/* الترويسة */}
       <header className="sticky top-0 z-50 border-b border-line/80 bg-white/90 backdrop-blur-md">
         <div className="relative mx-auto flex h-[72px] max-w-6xl items-center justify-between gap-6 px-5">
-          <a href="#top" aria-label="ابتدار الحلول - الصفحة الرئيسية" className="flex shrink-0 items-center gap-2">
-            <Image src="/mark.png" alt="" width={48} height={48} priority className="h-10 w-10" />
-            <span className="text-lg font-bold text-navy">ابتدار الحلول</span>
+          <a href="#top" aria-label="ابتدار الحلول - الصفحة الرئيسية" className="shrink-0">
+            <Image src="/logo.png" alt="ابتدار الحلول" width={1280} height={317} priority className="h-10 w-auto" />
           </a>
           <nav aria-label="التنقل الرئيسي" className="hidden items-center gap-1 md:flex">
             {nav.map((n) => (
@@ -425,10 +424,7 @@ export default function Page() {
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 md:flex-row">
           <div className="flex flex-col items-center gap-2 md:items-start">
-            <div className="flex items-center gap-2">
-              <Image src="/mark.png" alt="" width={40} height={40} className="h-9 w-9" />
-              <span className="font-bold text-navy">ابتدار الحلول</span>
-            </div>
+            <Image src="/logo.png" alt="ابتدار الحلول" width={1280} height={317} className="h-9 w-auto" />
             <p className="text-sm text-muted" dir="ltr">IBTIDAR ALHULUL COMPANY</p>
           </div>
           <nav aria-label="روابط التذييل" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
