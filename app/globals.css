@@ -13,7 +13,7 @@ body { @apply bg-white text-navy antialiased; }
   mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
 }
-
+ 
 /* ظهور تدريجي بسيط عند التحميل */
 .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
 .rise-2 { animation-delay: .12s; }
