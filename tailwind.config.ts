@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ألوان مأخوذة من شعار ابتدار
+        // ألوان مأخوذة من شعار ابتدار الحلول
         navy: { DEFAULT: "#12293B", 700: "#1A3850", 600: "#24496A" },
         brand: { DEFAULT: "#2373D2", 600: "#1C62B5", 50: "#EEF5FD", 100: "#DCEAFB" },
         mist: "#F6F8FB",

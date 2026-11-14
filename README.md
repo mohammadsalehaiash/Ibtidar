@@ -1,4 +1,4 @@
-# ابتدار (Ibtidar) - Landing Page
+# ابتدار الحلول (Ibtidar) - Landing Page
 Next.js 15 (App Router) + TypeScript + Tailwind CSS 3
 
     npm install

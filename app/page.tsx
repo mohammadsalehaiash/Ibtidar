@@ -8,9 +8,9 @@ import MobileNav from "./MobileNav";
 
 /* ---------------- المحتوى ---------------- */
 
-const PHONE = "0502439983";
+const PHONE = "0502449983";
 const PHONE_INTL = `966${PHONE.slice(1)}`;
-const EMAIL = "Ahmed.saif@windowslive.com";
+const EMAIL = "info@ibtidar.com";
 
 const nav = [
   { href: "#about", label: "من نحن" },
@@ -68,7 +68,7 @@ const impact = [
 
 const vision = [
   "التوسع في تقديم حلول الذكاء الاصطناعي وتحليل البيانات التنبؤية",
-  "إطلاق «أكاديمية ابتدار» لتأهيل الكفاءات السعودية في مجال التقنية",
+  "إطلاق «أكاديمية ابتدار الحلول» لتأهيل الكفاءات السعودية في مجال التقنية",
   "فتح شراكات استراتيجية مع حاضنات ومسرّعات الأعمال",
   "التوسع الإقليمي لتقديم الحلول التقنية للأسواق الخليجية والعربية",
   "الاستثمار في مشاريع رقمية وطنية تخدم رؤية السعودية 2030",
@@ -158,8 +158,9 @@ export default function Page() {
       {/* الترويسة */}
       <header className="sticky top-0 z-50 border-b border-line/80 bg-white/90 backdrop-blur-md">
         <div className="relative mx-auto flex h-[72px] max-w-6xl items-center justify-between gap-6 px-5">
-          <a href="#top" aria-label="ابتدار - الصفحة الرئيسية" className="shrink-0">
-            <Image src="/logo.png" alt="ابتدار" width={1280} height={317} priority className="h-10 w-auto" />
+          <a href="#top" aria-label="ابتدار الحلول - الصفحة الرئيسية" className="flex shrink-0 items-center gap-2">
+            <Image src="/mark.png" alt="" width={48} height={48} priority className="h-10 w-10" />
+            <span className="text-lg font-bold text-navy">ابتدار الحلول</span>
           </a>
           <nav aria-label="التنقل الرئيسي" className="hidden items-center gap-1 md:flex">
             {nav.map((n) => (
@@ -228,9 +229,9 @@ export default function Page() {
           <div className="mx-auto grid max-w-6xl gap-14 px-5 lg:grid-cols-[1fr_1.4fr]">
             <div>
               <Eyebrow>من نحن</Eyebrow>
-              <Heading>لماذا «ابتدار»؟</Heading>
+              <Heading>لماذا «ابتدار الحلول»؟</Heading>
               <p className="mt-5 leading-8 text-muted">
-                «ابتدار» تعني المبادرة والمسارعة إلى الشيء قبل غيرك. وهذا ما نفعله: نبادر بعملائنا
+                «ابتدار الحلول» تعني المبادرة والمسارعة إلى الشيء قبل غيرك. وهذا ما نفعله: نبادر بعملائنا
                 إلى الحلول الرقمية قبل أن تصبح ضرورة، ليسبقوا السوق بدل أن يلحقوا به.
               </p>
               <p className="mt-4 leading-8 text-muted">
@@ -423,13 +424,19 @@ export default function Page() {
       {/* التذييل */}
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 md:flex-row">
-          <Image src="/logo.png" alt="ابتدار" width={1280} height={317} className="h-9 w-auto" />
+          <div className="flex flex-col items-center gap-2 md:items-start">
+            <div className="flex items-center gap-2">
+              <Image src="/mark.png" alt="" width={40} height={40} className="h-9 w-9" />
+              <span className="font-bold text-navy">ابتدار الحلول</span>
+            </div>
+            <p className="text-sm text-muted" dir="ltr">IBTIDAR ALHULUL COMPANY</p>
+          </div>
           <nav aria-label="روابط التذييل" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
             {nav.map((n) => (
               <a key={n.href} href={n.href} className="hover:text-navy">{n.label}</a>
             ))}
           </nav>
-          <p className="text-sm text-muted">© {new Date().getFullYear()} ابتدار. جميع الحقوق محفوظة.</p>
+          <p className="text-sm text-muted" dir="ltr">© 2026 IBTIDAR ALHULUL COMPANY. All rights reserved.</p>
         </div>
       </footer>
     </>
